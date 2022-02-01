@@ -71,7 +71,7 @@ class IO(object):
 
     @staticmethod
     def select(*args, **kwargs):
-        return select.select(*args, **kwargs)
+        return select.poll(*args, **kwargs)
 
     @staticmethod
     def sleep(t: float) -> None:
